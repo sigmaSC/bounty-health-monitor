@@ -1,0 +1,15 @@
+{
+  "name": "bounty-health-monitor",
+  "version": "1.0.0",
+  "description": "Monitoring dashboard that tracks bounty board API health with uptime, response times, error rates, and 7-day history charts.",
+  "type": "module",
+  "scripts": {
+    "start": "bun run index.ts",
+    "dev": "bun --watch run index.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "keywords": ["bounty", "health", "monitor", "dashboard", "uptime"],
+  "license": "MIT"
+}
