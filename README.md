@@ -1,16 +1,16 @@
 # bounty-health-monitor
 
-Monitoring dashboard that tracks the AI Bounty Board API health with uptime percentages, response times, error rates, and 7-day history charts.
+**Health monitoring** dashboard that tracks the AI Bounty Board API with **response time tracking**, **webhook alerts**, and **history charts**.
 
 ## Features
 
-- Polls `/bounties`, `/stats`, and `/bounties/:id` endpoints on a configurable interval
-- Tracks uptime, average/max response times, and error rates
-- 7-day history stored in a local JSON file
-- Web dashboard with Chart.js visualizations (uptime, response times, error rate)
-- Webhook alerts when issues are detected (failures, slow responses > 5s)
+- **Health monitoring** — polls `/bounties`, `/stats`, and `/bounties/:id` endpoints on a configurable interval
+- **Response time tracking** — tracks average, min, and max response times per endpoint with 7-day history
+- **Webhook alerts** — sends POST notifications to your webhook URL when failures or slow responses (>5s) are detected
+- **History charts** — 7-day Chart.js visualizations for uptime percentage, response times, and error rates
 - Rate-limited alerts (max one per 5 minutes)
 - REST API endpoints for programmatic access
+- Persistent JSON history file
 
 ## Quick Start
 
